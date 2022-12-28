@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  font-family: "Inter";
+}
+
+.screen {
+  margin: 0 auto;
+  max-width: 40rem;
+  min-height: 100vh;
+}
+
+.screen__wrapper {
+  padding: 1rem 2rem;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.main {
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.groups {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.group__title {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.component:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.component__main__title {
+  margin-right: 0.5rem;
+}
+
+.component__main {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.component__main__select {
+  background: none;
+  border: .1rem solid;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  appearance: none;
+  margin-right: .5rem;
+}
+
+.header__logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header__logo_m {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .header__logo_m {
+    display: block;
+  }
+
+  .header__logo_d {
+    display: none;
+  }
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: .2rem solid;
+  font-size: 2.5rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button_null {
+  background: none;
+  border: none;
+}
+
+.component__spec {
+  border: .1rem solid;
+  border-radius: .5rem;
+  padding: 0.5rem;
+}
+
+.component__spec__title {
+  font-weight: bold;
+}
+
+.component__spec__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.component__spec__item:not(:last-child){
+  margin-bottom: .5rem;
+}
