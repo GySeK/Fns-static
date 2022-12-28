@@ -18,7 +18,7 @@
                     {{ product.name }}</option>
                 </select>
                 <button class="button button_null"
-                  @click="dropdownShow[systemItem.p_type] = !dropdownShow[systemItem.p_type]">
+                  @click="dropdownShow[systemItem.p_type] = !dropdownShow[systemItem.p_type]" v-show="selectedProducts[systemItem.p_type]">
                   <svg height="1rem" weight="1rem" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <g transform="matrix(1.3521 0 0 1.35 -.039132 10.5)">
                       <g transform="matrix(1.4939 0 0 1.4882 -.014293 11.912)" stroke-width=".5124">
